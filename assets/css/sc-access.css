@@ -1,0 +1,30 @@
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.json-display {
+	height: 600px;
+	overflow-y: auto;
+}
+
+.json-formatter-dark-custom {
+	background-color: #272822;
+	padding: 20px 20px 20px 20px;
+}
+
+.vertical-space {
+	height: 60px;
+}
+
+.screen-center {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+}

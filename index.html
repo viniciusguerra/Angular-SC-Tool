@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="SCAccess" lang="en">
+<head>
+
+	<meta charset="UTF-8">
+
+	<!-- Bootstrap Core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">    
+
+    <!-- AngularJS -->
+    <script src="assets/js/angular.min.js"></script>
+
+	<!-- Angular Scripts -->
+	<script src="app/modules.js"></script>
+	<script src="app/config.js"></script>
+	<script src="app/controllers.js"></script>	
+
+	<!-- Json Formatter for Angular -->
+	<script src="assets/js/json-formatter.min.js"></script>
+	<link href="assets/css/json-formatter.min.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="assets/css/sc-access.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div ng-controller="RequestController as RequestCtrl">
+
+			<div class="jumbotron col-md-6 json-display screen-center">
+			
+				<div class="container">
+
+					<h1 class="text-center">PHP = &#x1f4a9;</h1>
+
+					<div class="col-md-12 vertical-space"></div>
+
+					<h3 class="text-left">SC-API Get Organizations Result:</h3>
+
+					<json-formatter open="1" json="getOrgsResponse" class="json-formatter-dark json-formatter-dark-custom"></json-formatter>
+
+				</div>
+
+			</div>
+
+	</div>
+
+</body>
+
+</html>
